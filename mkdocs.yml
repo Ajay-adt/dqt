@@ -1,5 +1,5 @@
 # Project information
-site_name: REPO_NAME_OR_SITE_NAME
+site_name: Data Quality Toolkit Framework
 # defeine TOC or order of website-
 nav:
   - Home: index.md
