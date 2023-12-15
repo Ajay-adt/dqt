@@ -3,7 +3,8 @@ site_name: REPO_NAME_OR_SITE_NAME
 # defeine TOC or order of website-
 nav:
   - Home: index.md
-
+  - Prerequesties: dependency.md
+  - Quickstart: quickstart.md
 site_author: Ajay
 site_description: >-
   DESCRIPTION
