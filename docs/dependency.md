@@ -1,5 +1,3 @@
-## Dependencies
-
 - **great-expectations[azure]**: 0.18.5
 - **python-box**: 7.1.1
 - **ensure**: 1.0.4
