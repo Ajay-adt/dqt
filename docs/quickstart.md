@@ -2,7 +2,7 @@
      from dqt import DQEngine
      from pyspark.dbutils import DBUtils
      DQEngine.dbutils = DBUtils(spark)
-```
+
 
 ```python
 def start_data_validation():
@@ -63,7 +63,6 @@ def start_data_validation():
     sourceDF,dq_log              = DQEngine.take_action(data,action_params)
     
     return sourceDF,dq_log
-```
 
 ```python
 if dqRule:
