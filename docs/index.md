@@ -1,6 +1,4 @@
-# Welcome to MkDocs
-
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# Welcome to DQT Framework
 
 ## Commands
 
@@ -32,6 +30,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     │   ├── requirements_dev.txt     # Development dependencies
     │   └── setup.py                 # Setup script for the project
     └── readme.md                    # Project readme file
+    
 ## Documentation for Databricks notebook template for creating mkdocs index.md files based on DQ output
 
 This notebook template automates the process of generating mkdocs index.md files based on the results of your Databricks data quality (DQ) checks. It leverages Great Expectations to define and run expectations against your data, and then creates a report summarizing the results.
