@@ -11,11 +11,27 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Project layout
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
-
+    ├── lib
+    │   ├── docs
+    │   │   ├── dependency.md        # Documentation about project dependencies
+    │   │   ├── img                  # Image resources for documentation
+    │   │   ├── index.md             # Main documentation index
+    │   │   ├── javascripts
+    │   │   │   ├── mathjax.js       # JavaScript library for math typesetting
+    │   │   │   └── tawk.js          # JavaScript for Tawk.to integration
+    │   │   └── quickstart.md        # Quickstart guide for the project
+    │   ├── dqt
+    │   │   ├── DQAction.py          # Module for data quality actions
+    │   │   ├── DQEngine.py          # Module for data quality engine
+    │   │   ├── __init__.py          # Initialization file for the dqt package
+    │   │   ├── cli.py               # Command-line interface module
+    │   │   ├── exception.py         # Module for custom exceptions
+    │   │   ├── logger.py            # Module for project logging
+    │   │   └── utils.py             # Utility module
+    │   ├── mkdocs.yml               # Configuration file for MkDocs documentation
+    │   ├── requirements_dev.txt     # Development dependencies
+    │   └── setup.py                 # Setup script for the project
+    └── readme.md                    # Project readme file
 ## Documentation for Databricks notebook template for creating mkdocs index.md files based on DQ output
 
 This notebook template automates the process of generating mkdocs index.md files based on the results of your Databricks data quality (DQ) checks. It leverages Great Expectations to define and run expectations against your data, and then creates a report summarizing the results.
