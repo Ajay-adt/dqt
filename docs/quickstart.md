@@ -1,9 +1,11 @@
+## Project layout
+
 ```python
      from dqt import DQEngine
      from pyspark.dbutils import DBUtils
      DQEngine.dbutils = DBUtils(spark)
 
-
+## Project layout
 ```python
 def start_data_validation():
     from pyspark.dbutils import DBUtils
@@ -64,6 +66,7 @@ def start_data_validation():
     
     return sourceDF,dq_log
 
+## Project layout
 ```python
 if dqRule:
     sourceDF,dq_log = start_data_validation()
