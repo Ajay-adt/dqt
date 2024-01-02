@@ -10,7 +10,7 @@
     #import 
     from dqt.DQEngine import DataValidationEngine
 
-    # Create an instance of DataValidationEngine
+    # Create an instance of DataValidationEngine with the provided parameters
     engine = DataValidationEngine(
         spark,
         GXDS_STORAGE_ACCOUNT_NAME,
