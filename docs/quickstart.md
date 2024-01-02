@@ -1,4 +1,4 @@
-## Project layout
+## Import library
 
 ```python
      from dqt import DQEngine
@@ -6,7 +6,7 @@
      DQEngine.dbutils = DBUtils(spark)
 ```
 
-## Project layout
+## Setup
 
 ```python
 def start_data_validation():
@@ -69,7 +69,7 @@ def start_data_validation():
     return sourceDF,dq_log
 ```
 
-## Project layout
+## Run
 
 ```python
 if dqRule:
