@@ -4,7 +4,8 @@ site_name: Data Quality Toolkit Framework
 nav:
   - Home: index.md
   - Prerequesties: dependency.md
-  - Quickstart: quickstart.md
+  - QuickStart: quickstart.md
+  - RuleList: ruleList.md
   
 site_author: Ajay
 site_description: >-
