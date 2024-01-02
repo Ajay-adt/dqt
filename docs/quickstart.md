@@ -1,11 +1,57 @@
 ## Import library
 
 ```python
-     from dqt import DQEngine
-     from pyspark.dbutils import DBUtils
-     DQEngine.dbutils = DBUtils(spark)
+    from dqt import DQEngine
+    from dqt.utils import *
 ```
 
+## Create DataValidationEngine Class Object
+```python
+    #import 
+    from dqt.DQEngine import DataValidationEngine
+
+    # Create an instance of DataValidationEngine
+    engine = DataValidationEngine(
+        spark,
+        GXDS_STORAGE_ACCOUNT_NAME,
+        GXDS_CONTAINER_NAME,
+        GXDS_CONTAINER_DIR,
+        fileName,
+        fileFormat,
+        ruleList,
+        lastModifiedTimestamp,
+        pipeline_run_id
+    )
+```
+
+
+## Run
+
+```python
+    # Check if the data quality rule is active
+    if dqRule:
+        # If the rule is active, execute the following block
+        # This block executes when the data quality rule is active
+
+        # Call the execute_dq_rule method of the engine
+        # This method likely performs the necessary data validation and logging
+        # The results (sourceDF and dq_log) are assigned accordingly
+        sourceDF, dq_log = engine.execute_dq_rule()
+
+        # You can add additional actions within this block
+
+    else:
+        # If the rule is not active, execute the following block
+        # This block executes when the data quality rule is deactivated
+
+        # Call the execute_dq_rule_deactivated method of the engine
+        # This method likely contains logic to handle the case when the rule is deactivated
+        engine.execute_dq_rule_deactivated()
+
+        # You can add additional actions within this block
+```
+
+<!-- 
 ## Setup
 
 ```python
@@ -85,4 +131,4 @@ if dqRule:
 else:
    # Action
    pass
-```
+``` -->
