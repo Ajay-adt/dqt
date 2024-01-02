@@ -1,11 +1,18 @@
 # Welcome to DQT Framework
 
-## Commands
+This notebook template automates the process of generating mkdocs index.md files based on the results of your Databricks data quality (DQ) checks. It leverages Great Expectations to define and run expectations against your data, and then creates a report summarizing the results.
 
+## Commands
+* `python setup.py sdist bdist_wheel  ` - Create wheel file.
+* `pip install dist/your_package-1.0.0.tar.gz` - Install from source distribution.
+* `pip install dist/your_package-1.0.0-py3-none-any.whl` -  Install from wheel distribution.
+
+  
 * `mkdocs new [dir-name]` - Create a new project.
 * `mkdocs serve` - Start the live-reloading docs server.
 * `mkdocs build` - Build the documentation site.
 * `mkdocs -h` - Print help message and exit.
+
 
 ## Project layout
 
@@ -31,9 +38,7 @@
     │   └── setup.py                 # Setup script for the project
     └── readme.md                    # Project readme file
     
-## Documentation for Databricks notebook template for creating mkdocs index.md files based on DQ output
 
-This notebook template automates the process of generating mkdocs index.md files based on the results of your Databricks data quality (DQ) checks. It leverages Great Expectations to define and run expectations against your data, and then creates a report summarizing the results.
 
 ## Key functionalities:
 
