@@ -3,7 +3,7 @@
 
 | Rule ID | Expectation Name                             | Action Function Name                        |
 |--------------|----------------------------------------------|---------------------------------------------|
-| 1            | `expect_column_to_exist`                     | `remove_duplicates`                        |
+| 1            | `expect_column_to_exist`                     | (No specific action function assigned)     |
 | 2            | `expect_table_row_count_to_be_between`       | (No specific action function assigned)     |
 | 3            | `expect_table_row_count_to_equal`            | (No specific action function assigned)     |
 | 4            | `expect_column_values_to_be_unique`         | `remove_duplicates`                        |
